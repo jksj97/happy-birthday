@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+body{background-color: #F7F8FD;}
+
+.body{
+    max-width: 360px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    padding: 20px 10px 60px 10px;
+    overflow: hidden;
+}
+
+.intro,
+.first,
+.second{text-align: center;}
+
+h1{font-size: 54px; font-weight: 700;}
+h4{font-size: 20px; font-weight: 700;}
+p{font-size: 16px;}
+
+@media (max-width:360px){
+    body{background-color: none;}
+    .body{
+        max-width: 360px;
+        margin: 0px;
+        background-color: white;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    .modal-container img{width: 100%; height: auto;}
+}
+
+.intro{margin-top: 60px;}
+.intro h1{text-align: left;}
+.intro img.scrolldwon-icon{width: 62px; height: 62px; margin-top: 50px;}
+
+.first{margin-top: 140px;}
+.first .shake-hand-icon{width: 146px; height: 146px; margin-bottom: 10px;}
+
+.second{
+    margin-top: 140px; 
+}
+.second .second-hi-dad{width: 350px; height: auto; margin-bottom: 140px;}
+.btn-check-area .img-dad-cont img.dad-face-img{margin-bottom: 20px;}
+.btn-check-area .img-dad-cont p{color: #ABABAB; font-weight: 400; padding-top: 8px; line-height: 24px;}
+
+.btn-check-container{margin-top: 54px;}
+
+.btn-check-container .change-text-btn{
+    width: 100%;
+    height: 56px;
+    background-color: #DEDEDE;
+    border-radius: 6px;
+    border: none;
+    color: #ABABAB;
+    margin-bottom: 14px;
+}
+
+input[type=checkbox]{display: none;}
+
+input#hidden-input01[type=checkbox] + label:after,
+input#hidden-input02[type=checkbox] + label:after,
+input#hidden-input03[type=checkbox] + label:after,
+input#hidden-input04[type=checkbox] + label:after,
+input#hidden-input05[type=checkbox] + label:after {
+    display: block;
+    padding: 16px 0;
+    cursor: pointer;
+} 
+input#hidden-input01[type=checkbox]:checked + label:after,
+input#hidden-input02[type=checkbox]:checked + label:after,
+input#hidden-input03[type=checkbox]:checked + label:after,
+input#hidden-input04[type=checkbox]:checked + label:after,
+input#hidden-input05[type=checkbox]:checked + label:after{
+    display: block;
+    background-color: white;
+    color: #151515;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+    border-radius: 6px;
+    transition: ease-in-out cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
+}
+
+
+
+input#hidden-input01[type=checkbox] + label:after{content: '아빠';} 
+input#hidden-input01[type=checkbox]:checked + label:after {content: '화이팅!';}
+
+input#hidden-input02[type=checkbox] + label:after {content: '엄마';} 
+input#hidden-input02[type=checkbox]:checked + label:after {content: '삐지지마 다음은 엄마야!';}
+
+input#hidden-input03[type=checkbox] + label:after {content: '나 낳아줘서';} 
+input#hidden-input03[type=checkbox]:checked + label:after {content: '고마워 나 진짜 열심히 살게~!';}
+
+input#hidden-input04[type=checkbox] + label:after {content: '그니까';} 
+input#hidden-input04[type=checkbox]:checked + label:after {content: '조금만 더 믿어줘 알았지?';}
+
+input#hidden-input05[type=checkbox] + label:after {content: '...rㅎㅅㅎr';} 
+input#hidden-input05[type=checkbox]:checked + label:after {content: 'ㅅ ㅏ.. 사모합니다..';}
+
+.second img.mail-group {margin: 140px 0 42px 0; text-align: center;}
+
+.modal-container{width: 100%; height: 80px;}
+.modal-container img{position: relative; left: -12px;}
+/* .modal-container img:nth-child(2){display: none;}
+.modal-container img:nth-child(1):hover  .modal-container img:nth-child(2){display: block;} */
+
+.thrid{margin-top: 140px; text-align: center;}
+.thrid video{
+    width: 100%; 
+    height: 100%; 
+    margin: 10px 0 16px 0;
+    border-radius: 6px;
+}
+.thrid img{margin-bottom: 30px;}
